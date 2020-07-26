@@ -5,6 +5,7 @@ Table of contents
 =================
 <!--ts-->
    * [Spring Boot Basis](#Spring-Boot-Basis)
+   * [Spring Boot Bean DI](#Spring-Boot-Bean-DI)
 <!--te-->
 
 Spring Boot Basis
@@ -28,6 +29,9 @@ Spring Boot Basis
 * API 방식의 요청 처리 시나리오
   * 스프링은 웹 요청이 들어왔을 때 내장 톰캣 서버가 요청을 핸들링하고 요청에 맞는 컨트롤러에서 `@ResponseBody`가 있으면 `HttpMessageConverter`에서 객체는 `MappingJackson2HttpMessageConverter`로 문자는 `StringHttpMessageConverter` 변경하여 반환
   * 클라이언트가 요청하는 HTTP Accept 헤더와 서버의 컨트로럴러 번환 타입 정보를 조합해서 `HttpMessageConverter`가 자동으로 선택
+  
+Spring Boot Bean DI
+=======
 
 ### 보충할 것
 
