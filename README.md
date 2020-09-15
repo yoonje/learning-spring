@@ -54,4 +54,4 @@ Spring Boot Bean DI
 
 ### 보충할 것
 * 섹션 3 / 섹션 5 - 예제
-* DB / AOP
+* 섹션 6 / 섹션 7
