@@ -6,6 +6,8 @@ Table of contents
 <!--ts-->
    * [Spring Boot Basis](#Spring-Boot-Basis)
    * [Spring Boot Bean DI](#Spring-Boot-Bean-DI)
+   * [Spring Boot DB](#Spring-Boot-DB)
+   * [Spring Boot AOP](#Spring-Boot-AOP)
 <!--te-->
 
 Spring Boot Basis
@@ -52,5 +54,8 @@ Spring Boot Bean DI
   * `@Configuration`이 붙은 클래스르 만들고 스프링이 실행할 때 구성할 수 있게 하고 그 안에 `@Bean` 어노테이션을 붙여줘서 빈으로 등록
   
 
-### 보충할 것
-* 섹션 3 / 섹션 5 / 섹션 6 / 섹션 7
+Spring Boot DB
+=======
+
+Spring Boot AOP
+=======
