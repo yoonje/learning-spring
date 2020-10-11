@@ -1,5 +1,6 @@
 package com.inflean.spring.service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 import com.inflean.spring.domain.Member;
@@ -8,7 +9,9 @@ import com.inflean.spring.repository.MemoryMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+// JPA는 모든 데이터 변경이 트랜잭션 안에서 이뤄져야하므로 @Transactional 추가
 @Service
+@Transactional
 public class MemberService {
 
     private final MemberRepository memberRepository;

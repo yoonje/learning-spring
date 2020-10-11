@@ -57,12 +57,23 @@ Spring Boot Bean DI
 Spring Boot DB
 =======
 ### JDBC
+* 괴거 자바를 통해서 DB를 조작하던 자바 API 라이브러리로 JDBC API로 직접 코딩
+* SQL 구문을 직접 작성하며 각각의 DB 별로 맞는 드라이버가 필요
 
 ### Spring JDBC
+* 스프링 `JdbcTemplate`는 MyBatis 같은 라이브러리로 JDBC API에서 본 반복 코드를 대부분 제거한 라이브러리
+* 템플릿 매서드 패턴과 콜백 메소드 구조로 JDBC API의 반복되는 코드를 줄임
+* SQL 구문은 직접 작성하며 각각의 DB 별로 맞는 드라이버가 필요
 
 ### JPA
+* JPA는 자바 표준 인터페이스로 내부 구현체는 `Hibernate`가 주로 이용됨
+* JPA는 기존의 반복 코드는 물론이고, 기본적인 SQL도 JPA가 직접 만들어서 실행하여 객체 중심의 설계로 패러다임을 전환시켜줌
+* SQL 구문을 작성할 필요가 없이 간단하게 JPQL을 짜야하며 각각의 DB 별로 맞는 드라이버가 필요
 
 ### Spring Data JPA
+* 스프링 데이터 JPA는 JPA를 한번 더 래핑한 라이브러리
+* SQL, JPQL 구문을 작성할 필요가 없으며 각각의 DB 별로 맞는 드라이버만 필요
+* 복잡한 동적 쿼리는 Querydsl로 활용
 
 Spring Boot AOP
 =======
