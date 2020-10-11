@@ -56,6 +56,13 @@ Spring Boot Bean DI
 
 Spring Boot DB
 =======
+### JDBC
+
+### Spring JDBC
+
+### JPA
+
+### Spring Data JPA
 
 Spring Boot AOP
 =======
