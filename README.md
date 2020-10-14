@@ -1,4 +1,4 @@
-# Spring Boot 정리 자료
+# Spring Framework 정리 자료
 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술 정리 문서
 
 Table of contents
