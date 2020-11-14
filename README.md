@@ -62,19 +62,21 @@ Spring Boot DB
 * SQL 구문을 직접 작성하며 각각의 DB 별로 맞는 드라이버가 필요
 
 ### Spring JDBC
-* 스프링 `JdbcTemplate`는 MyBatis 같은 라이브러리로 JDBC API에서 본 반복 코드를 대부분 제거한 라이브러리
+* 스프링 `JdbcTemplate`는 `JDBC API에서 본 반복 코드를 대부분 제거한 라이브러리`
+* MyBatis 같은 라이브러리
 * 템플릿 매서드 패턴과 콜백 메소드 구조로 JDBC API의 반복되는 코드를 줄임
 * `JdbcTemplate`을 통해서 쿼리를 날리고 받아 오는 콜백 메소드를 통해 데이터를 받아옴
 * SQL 구문은 직접 작성하며 각각의 DB 별로 맞는 드라이버가 필요
 
 ### JPA
+* 자바 퍼시스턴스 API(Java Persistence API)는 자바 플랫폼을 사용하는 응용프로그램에서 관계형 데이터베이스의 관리를 표현하는 자바 API
 * JPA는 자바 표준 인터페이스로 내부 구현체는 `Hibernate`가 주로 이용됨
 * JPA는 기존의 반복 코드는 물론이고, 기본적인 SQL도 JPA가 직접 만들어서 실행하여 객체 중심의 설계로 패러다임을 전환시켜줌
 * `EntityManager`의 API 통해서 쿼리를 날리고 이것이 SQL로 변형되어 DB에 전달됨
 * SQL 구문을 작성할 필요가 없이 간단하게 `JPQL`을 짜야하며 각각의 DB 별로 맞는 드라이버가 필요
 
 ### Spring Data JPA
-* 스프링 데이터 JPA는 JPA를 한번 더 래핑한 라이브러리
+* 스프링 데이터 JPA는 스프링에서 `JPA를 한번 더 래핑한 라이브러리`
 * 인터페이스 안에 구현체가 들어 있고 거기에 기본 CRUD 함수들이 오버라이딩 되어있고 빈으로 자동으로 등록됨
 * SQL, JPQL 구문을 작성할 필요가 없으며 각각의 DB 별로 맞는 드라이버만 필요
 * 복잡한 동적 쿼리는 Querydsl로 활용
