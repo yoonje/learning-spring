@@ -13,7 +13,7 @@ class MemoryMemberRepositoryTest {
 
     MemoryMemberRepository repository = new MemoryMemberRepository();
 
-    // 테스트가 끝날 때마다 저장소의 데이터를 초기화하기 위한 콜백 메소
+    // 테스트가 끝날 때마다 저장소의 데이터를 초기화하기 위한 콜백 메소드
     @AfterEach
     public void afterEach(){
         repository.clearStore();
