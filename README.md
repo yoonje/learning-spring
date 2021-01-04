@@ -1,6 +1,22 @@
 # Spring Framework 정리 자료
 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술 정리 문서
 
+## Requirements
+- [JDK 1.8+](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+- [maven](https://maven.apache.org)
+- [H2](https://www.h2database.com/html/main.html)
+
+## Build
+```
+mvn clean package -Dmaven.test.skip=true
+```
+
+## Run
+```
+$ h2.sh
+$ mvn spring-boot:run
+```
+
 Table of contents
 =================
 <!--ts-->
